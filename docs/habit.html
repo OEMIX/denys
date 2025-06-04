@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Щоденник ‒ MilitarySupport</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/journal.css" />
+</head>
+
+<body>
+<header>
+  <h1><a href="/dashboard">Military<span>Support</span></a></h1>
+  <a href="dashboard.html" title="Повернутись"><i class="bx bx-log-out-circle"></i></a>
+</header>
+
+<section>
+  <div class="blurCircle-1"></div>
+  <div class="blurCircle-2"></div>
+
+  <div class="container">
+    <div class="form">
+      <form id="journalForm">
+        <input
+                type="text"
+                id="titleInput"
+                placeholder="Заголовок запису"
+                required
+        />
+        <input
+                type="date"
+                id="dateInput"
+                required
+        />
+        <textarea
+                id="entryInput"
+                placeholder="Ваші думки та емоції..."
+                required
+        ></textarea>
+        <button type="submit" id="addButton">Додати запис</button>
+      </form>
+    </div>
+    <div id="journalsContainer">
+      <!-- Тут з’являтимуться ваші записи -->
+    </div>
+  </div>
+</section>
+
+<script src="js/journal.js"></script>
+</body>
+</html>

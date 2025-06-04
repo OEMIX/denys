@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Вправи ‒ MilitarySupport</title>
+  <!-- box-icons import -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/exercise.css" />
+</head>
+<body>
+<header>
+  <h1><a href="/dashboard">Military<span>Support</span></a></h1>
+  <a href="dashboard.html" title="Повернутись"><i class="bx bx-log-out-circle"></i></a>
+</header>
+
+<section>
+  <div class="blurCircle-1"></div>
+  <div class="blurCircle-2"></div>
+
+  <div class="container">
+    <!-- Категорії вправ -->
+    <div class="categories">
+      <button class="active" id="active"></button>
+      <button id="stretch-btn">Розтяжка</button>
+      <button id="hiit-btn">HIIT</button>
+      <button id="yoga-btn">Йога</button>
+      <button id="strength-btn">Силові</button>
+
+      <div class="intial-icon" id="intial-icon">
+        <img src="assets/exercise/running-icon.png" alt="Іконка руху" />
+        <h2>Тримай форму, будь готовий</h2>
+      </div>
+      <div class="intial-icon initial-hidden" id="intial-icon">
+        <img src="assets/exercise/running-icon.png" alt="Іконка руху" />
+        <h2>Тримай форму, будь готовий</h2>
+      </div>
+    </div>
+
+    <!-- Блок із вправами -->
+    <div class="exercises">
+      <!-- Вправи будуть завантажуватися тут -->
+    </div>
+  </div>
+</section>
+
+<script src="js/exercise.js"></script>
+</body>
+</html>

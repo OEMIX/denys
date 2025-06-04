@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Таймер усвідомленості ‒ MilitarySupport</title>
+    <!-- box-icons import -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mindfulness.css" />
+</head>
+
+<body>
+<section>
+    <div class="blurCircle-1"></div>
+    <div class="blurCircle-2"></div>
+
+    <header>
+        <h1><a href="/dashboard">Military<span>Support</span></a></h1>
+        <a href="dashboard.html" title="Повернутись"><i class="bx bx-log-out-circle"></i></a>
+    </header>
+
+    <div class="container">
+        <div class="timer-container">
+            <div id="timer">25:00</div>
+
+            <div class="duration-selection">
+                <label for="duration-select"><i class="bx bxs-time-five"></i></label>
+                <select id="duration-select">
+                    <option value="5">5 хвилин</option>
+                    <option value="10">10 хвилин</option>
+                    <option value="15">15 хвилин</option>
+                    <option value="20">20 хвилин</option>
+                    <option value="30">30 хвилин</option>
+                    <option value="45">45 хвилин</option>
+                    <option value="60">60 хвилин</option>
+                    <option value="90">90 хвилин</option>
+                </select>
+            </div>
+
+            <div class="background-music">
+                <label for="music-select"><i class="bx bxs-music"></i></label>
+                <select id="music-select">
+                    <option value="none">Без музики</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Dream">Dream</option>
+                    <option value="Hope">Hope</option>
+                    <option value="Memory">Memory</option>
+                    <option value="Time">Time</option>
+                    <option value="Nature">Nature</option>
+                    <option value="Stasis">Stasis</option>
+                    <option value="Alone">Alone</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button id="begin-btn">Почати</button>
+                <button id="pause-resume-btn" disabled>Пауза</button>
+                <button id="reset-btn" disabled>Скинути</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/mindfulness.js"></script>
+</body>
+
+</html>
