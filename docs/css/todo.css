@@ -1,0 +1,261 @@
+/* importing Poppins (sans-serif) font from googlr fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Color schemes */
+:root {
+  --mainBackgroundColor: #e9f0ff;
+  --headerColor: #101921;
+  --headerTextColor: #d6d4f9;
+  --textColor: #020025;
+  --spanColor: #de60f8;
+  --divBackgroundColor: rgba(255, 255, 255, 0.2);
+  --addbuttonColor: #de60f8;
+  --addClickColor: #9942ab;
+  --blurCircle-1: #b6b5ff;
+  --blurCircle-2: #fea5ff;
+  --completeBgColor:#68e3b4;
+  --completeClickColor: #2a622d;
+  --trashBgColor:#ff8b3e;
+  --trashClickColor:#a72d25;
+  --editBgColor: #6ed6ee;
+  --editClickColor:#00526d;
+  --secondTextColor:#ffffff;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+/* Body styles */
+body {
+  background-color: var(--mainBackgroundColor);
+  color: var(--textColor);
+}
+
+/* Header Stylling */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.2rem 9%;
+  background: var(--headerColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+h1 {
+  font-size: 3rem;
+  color: var(--headerTextColor);
+  font-weight: 800;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+span {
+  font-size: 3.5rem;
+  color: var(--spanColor);
+}
+
+header a {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--headerTextColor);
+  text-decoration: none;
+  transition: 0.4s ease;
+  margin-left: auto;
+}
+
+header a:hover {
+  transform: scale(1.2);
+  color: var(--spanColor);
+}
+
+section {
+  max-height: 100vh;
+  padding: 6.7rem;
+}
+
+.blurCircle-1 {
+  position: absolute;
+  top: -8rem;
+  left: -8rem;
+  width: 45rem;
+  height: 45rem;
+  background-color: var(--blurCircle-1);
+  border-radius: 50%;
+  filter: blur(5rem);
+  z-index: -1;
+}
+.blurCircle-2 {
+  position: absolute;
+  bottom: 5rem;
+  right: -2rem;
+  width: 50rem;
+  height: 50rem;
+  background-color: var(--blurCircle-2);
+  border-radius: 50%;
+  filter: blur(8rem);
+  z-index: -1;
+}
+
+/* Container Styles */
+.container {
+  width: 50%;
+  max-height: 90vh;
+  margin: auto;
+  background-color: rgba(236, 236, 236, 0.5);
+  padding: 2rem;
+  margin-top: 2.4rem;
+  border-radius: 4rem;
+  backdrop-filter: blur(100px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow-y: hidden;
+}
+
+/* Form Styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 4rem;
+  box-sizing: border-box;
+  transition: box-shadow 0.3s ease;
+}
+.form input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--spanColor); 
+}
+
+.note p{
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+/* add button stylling */
+#addButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto;
+  background: var(--addbuttonColor);
+  border: none;
+  border-radius: 2rem;
+  font-size: 2rem;
+  padding: 1rem 2rem; 
+  color: var(--textColor);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+#addButton:hover {
+  transform: scale(1.1);
+}
+#addButton:active {
+  transform: scale(0.9);
+  background: var(--addClickColor);
+  color: var(--textColor);
+}
+
+/* Todo Styling */
+#todosContainer {
+  max-height: 22rem;
+  overflow-y: auto;
+  scrollbar-width: none;
+}
+
+.todo {
+  background-color: var(--divBackgroundColor);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.todo h3 {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo p {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.todo button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+/* complete button design */
+.todo button.completeButton {
+  background-color: var(--completeBgColor);
+  font-size: 1.5rem;
+  color: var(--secondTextColor) ;
+}
+.todo button.completeButton:hover{
+  transform: scale(1.1);
+}
+.todo button.completeButton:active{
+  transform: scale(0.9);
+  background-color: var(--completeClickColor);
+}
+
+/* edit button design */
+.todo button.editButton {
+  background-color: var(--editBgColor);
+  font-size: 1.5rem;
+  color: var(--secondTextColor) ;
+}
+.todo button.editButton:hover{
+  transform: scale(1.1);
+}
+.todo button.editButton:active{
+  transform: scale(0.9);
+  background-color: var(--editClickColor);
+}
+
+/* delete button style */
+.todo button.deleteButton {
+  background-color: var(--trashBgColor);
+  font-size: 1.5rem;
+  color: var(--secondTextColor) ;
+}
+.todo button.deleteButton:hover{
+  transform: scale(1.1);
+}
+.todo button.deleteButton:active{
+  transform: scale(0.9s);
+  background-color: var(--trashClickColor);
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
