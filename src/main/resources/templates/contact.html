@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакти ‒ MilitarySupport</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+        }
+        :root {
+            --main-bg: #ffffff;
+            --text-color: #000000;
+            --accent-color: #9d60ff;
+            --blur1: #d4d3ff;
+            --blur2: #c2e9ff;
+        }
+        html {
+            font-size: 62.5%;
+            overflow-x: hidden;
+        }
+        body {
+            background: var(--main-bg);
+            color: var(--text-color);
+        }
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem 9%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: transparent;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--text-color);
+        }
+        .logo span {
+            color: var(--accent-color);
+        }
+        nav a {
+            margin-left: 3rem;
+            font-size: 1.6rem;
+            color: var(--text-color);
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .blurCircle-1, .blurCircle-2 {
+            position: absolute;
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .blurCircle-1 {
+            top: -8rem;
+            left: -8rem;
+            width: 45rem;
+            height: 45rem;
+            background: var(--blur1);
+            filter: blur(5rem);
+        }
+        .blurCircle-2 {
+            bottom: 5rem;
+            right: 0;
+            width: 50rem;
+            height: 50rem;
+            background: var(--blur2);
+            filter: blur(8rem);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding-top: 6rem;
+            position: relative;
+        }
+        .contact-container {
+            background: #f9f9f9;
+            border: 1px solid rgba(0,0,0,0.15);
+            box-shadow: 0 0 36px 1px rgba(0,0,0,0.2);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            padding: 2rem;
+            max-width: 600px;
+            text-align: center;
+        }
+        .contact-container h1 {
+            font-size: 2.8rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        .contact-container p {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+        }
+        .contact-info h3 {
+            font-size: 2rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        .contact-info p {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        .contact-info a {
+            color: var(--accent-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+<header class="header">
+    <a href="/" class="logo">Military<span>Support</span></a>
+    <nav>
+        <a href="/">Головна</a>
+        <a href="/about">Про нас</a>
+        <a href="/contact">Контакти</a>
+    </nav>
+</header>
+
+<div class="blurCircle-1"></div>
+<div class="blurCircle-2"></div>
+
+<section class="container">
+    <div class="contact-container">
+        <h1>Зв’язок з MilitarySupport</h1>
+        <p>
+            Якщо ви або ваші побратими потребують психологічної чи фізичної підтримки,
+            звертайтеся до нас у будь-який час.
+        </p>
+        <div class="contact-info">
+            <h3>Гарячі лінії</h3>
+            <p><strong>Психологічна підтримка:</strong> <a href="tel:+380441234567">+38 (044) 123-45-67</a></p>
+            <p><strong>Фізичне відновлення:</strong> <a href="tel:+380447654321">+38 (044) 765-43-21</a></p>
+            <h3>Електронна пошта</h3>
+            <p><a href="mailto:help@militarysupport.ua">help@militarysupport.ua</a></p>
+            <h3>Адреса</h3>
+            <p>м. Київ, вул. Підтримки, 10<br>01001 Україна</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <title>Панель підтримки</title>
+  <!-- for icons -->
+  <link
+          href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+          rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body>
+<!-- Dashboard Header -->
+<header>
+  <h1><a href="/home">Military<span>Support</span></a></h1>
+  <nav>
+    <a href="/logout"><i class="bx bx-log-out"></i></a>
+    <a href="/home"><i class="bx bxs-home-alt-2"></i></a>
+    <i class="bx bxs-moon" id="icon"></i>
+  </nav>
+</header>
+
+<!-- Dashboard Body -->
+<section id="dashboard">
+  <div class="container">
+    <!-- Blurred circles -->
+    <div class="blurCircle-1"></div>
+    <div class="blurCircle-2"></div>
+
+    <!-- Todo Div -->
+    <div class="box">
+      <div class="todo-image">
+        <img src="assets/icons/todo-icon.png" alt="Todo Іконка" />
+      </div>
+      <div id="todo">
+        <button id="todo-btn">Завдання</button>
+        <p>
+          Плануй завдання, розставляй пріоритети та тримай усе під контролем.
+          Цей інструмент допоможе зосередитись на головному і не втратити
+          важливе в рутині служби.
+        </p>
+      </div>
+    </div>
+
+    <!-- Journal Div -->
+    <div class="box">
+      <div class="journal-image">
+        <img src="assets/icons/journal-icon.png" alt="Journal Іконка" />
+      </div>
+      <div id="journal">
+        <button id="journal-btn">Щоденник</button>
+        <p>
+          Ведіть особистий щоденник для саморефлексії, фіксації думок та
+          емоцій. Це простір, де можна висловитись і краще зрозуміти себе.
+        </p>
+      </div>
+    </div>
+
+    <!-- Mindfulness Div -->
+    <div class="box">
+      <div class="mind-image">
+        <img src="assets/icons/mindfulness-icon.png" alt="Mindfulness Іконка" />
+      </div>
+      <div id="mindfulness">
+        <button id="mindfulness-btn">Практики усвідомленості</button>
+        <p>
+          Практики усвідомленості допомагають зняти напругу, зосередитись і
+          заспокоїти розум. Прості техніки для щоденного відновлення.
+        </p>
+      </div>
+    </div>
+
+    <!-- Habit Div -->
+    <div class="box">
+      <div class="habit-image">
+        <img src="assets/icons/habit-icons.png" alt="Habit Іконка" />
+      </div>
+      <div id="habit">
+        <button id="habit-btn">Трекер звичок</button>
+        <p>
+          Формуйте корисні звички — крок за кроком. Відстежуйте свій прогрес і
+          створюйте рутину, яка допомагає триматися у формі — ментально й
+          фізично.
+        </p>
+      </div>
+    </div>
+
+    <!-- Pomodoro Div -->
+    <div class="box">
+      <div class="Pomodoro-image">
+        <img src="assets/icons/pomodoro-icon.png" alt="Pomodoro Іконка" />
+      </div>
+      <div id="pomodoro">
+        <button id="pomodoro-btn">Таймер Помодоро</button>
+        <p>
+          Система таймерів для ефективної роботи з відпочинком. Працюйте
+          зосереджено та без перевантажень. Ідеально підходить для
+          самонавчання й тренувань.
+        </p>
+      </div>
+    </div>
+
+    <!-- Exercise Div -->
+    <div class="box">
+      <div class="exercise-image">
+        <img src="assets/icons/exercise-icon.png" alt="Exercise Іконка" />
+      </div>
+      <div id="exercise">
+        <button id="exercise-btn">Вправи</button>
+        <p>
+          Вправи для підтримки фізичної форми — від розтяжки до силових
+          занять. Прості комплекси, адаптовані до різних рівнів підготовки.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<script src="js/dashboard.js"></script>
+</body>
+</html>

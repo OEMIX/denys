@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Список завдань ‒ MilitarySupport</title>
+    <!-- box-icons import -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/todo.css" />
+</head>
+
+<body>
+<header>
+    <h1><a href="/dashboard">Military<span>Support</span></a></h1>
+    <a href="dashboard.html" title="Повернутись"><i class="bx bx-log-out-circle"></i></a>
+</header>
+
+<section>
+    <div class="blurCircle-1"></div>
+    <div class="blurCircle-2"></div>
+
+    <div class="container">
+        <div class="form">
+            <form id="todoForm">
+                <input
+                        type="text"
+                        id="titleInput"
+                        placeholder="Назва завдання"
+                        required
+                />
+                <input
+                        type="text"
+                        id="descriptionInput"
+                        placeholder="Опис (необов’язково)"
+                />
+                <input
+                        type="date"
+                        id="dueDateInput"
+                        placeholder="Дата виконання"
+                />
+                <input
+                        type="number"
+                        id="priorityInput"
+                        placeholder="Пріоритет (1–10)"
+                        min="1"
+                        max="10"
+                />
+                <input
+                        type="text"
+                        id="categoryInput"
+                        placeholder="Категорія (напр. #логістика)"
+                />
+                <div class="note">
+                    <p>
+                        <b>Примітка:</b> щоб скинути статус виконання, натисніть
+                        <b>Редагувати ➔ Оновити</b>
+                    </p>
+                </div>
+                <button type="submit" id="addButton">Додати завдання</button>
+            </form>
+        </div>
+
+        <div id="todosContainer">
+            <!-- Тут з’являться ваші завдання -->
+        </div>
+    </div>
+</section>
+
+<script src="js/todo.js"></script>
+</body>
+
+</html>

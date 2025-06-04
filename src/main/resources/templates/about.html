@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Центр підтримки військових</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Poppins', sans-serif;
+    }
+    :root {
+      --main-bg: #ffffff;
+      --text-color: #333;
+      --accent-color: #9d60ff;
+      --blur1: #d4d3ff;
+      --blur2: #c2e9ff;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      background: var(--main-bg);
+      color: var(--text-color);
+      overflow-x: hidden;
+    }
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 9%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: transparent;
+      z-index: 100;
+      transition: background 0.3s;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--text-color);
+    }
+    .logo span {
+      color: var(--accent-color);
+    }
+    nav a {
+      font-size: 1.6rem;
+      margin-left: 3.5rem;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: var(--accent-color);
+    }
+    .blurCircle-1, .blurCircle-2 {
+      position: absolute;
+      border-radius: 50%;
+      z-index: -1;
+    }
+    .blurCircle-1 {
+      top: -8rem;
+      left: -8rem;
+      width: 45rem;
+      height: 45rem;
+      background: var(--blur1);
+      filter: blur(5rem);
+    }
+    .blurCircle-2 {
+      bottom: 5rem;
+      right: 0;
+      width: 50rem;
+      height: 50rem;
+      background: var(--blur2);
+      filter: blur(8rem);
+    }
+    .container {
+      padding-top: 8rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-bottom: 4rem;
+    }
+    .content-container {
+      width: 90%;
+      max-width: 1000px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      padding: 2rem;
+      backdrop-filter: blur(10px);
+      margin-bottom: 2rem;
+    }
+    .content-container h1 {
+      font-size: 3.2rem;
+      text-align: center;
+      margin-bottom: 1.5rem;
+      color: var(--accent-color);
+    }
+    .content-container h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+    .content-container h3 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+    .content-container p,
+    .content-container li {
+      font-size: 1.6rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .content-container ul {
+      margin-left: 2rem;
+      list-style: disc;
+    }
+    .video-container {
+      width: 90%;
+      max-width: 1000px;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .video-container h2 {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: var(--accent-color);
+    }
+    .video-container iframe {
+      width: 100%;
+      max-height: 500px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+<header class="header">
+  <a href="/" class="logo">Military<span>Support</span></a>
+  <nav>
+    <a href="/">Головна</a>
+    <a href="/about">Про нас</a>
+    <a href="/contact">Контакти</a>
+  </nav>
+</header>
+
+<div class="blurCircle-1"></div>
+<div class="blurCircle-2"></div>
+
+<section class="container">
+  <div class="content-container">
+    <h1>Центр підтримки військових</h1>
+    <h2>Психологічна та фізична підтримка військовослужбовців</h2>
+    <p>
+      Ми надаємо всебічну підтримку ментального та фізичного здоров’я військових. Розуміємо виклики активної служби й прагнемо зміцнити стійкість, здоров’я та готовність до будь-яких завдань.
+    </p>
+    <h3>Психологічна підтримка</h3>
+    <ul>
+      <li><strong>Конфіденційні консультації:</strong> психологічна допомога та терапія для зниження стресу, тривоги та опрацювання травм.</li>
+      <li><strong>Програми підтримки побратимів:</strong> мережі взаємодопомоги й наставництва для обміну досвідом і зменшення ізоляції.</li>
+      <li><strong>Тренінги стресостійкості:</strong> техніки усвідомленості та управління емоціями для зміцнення внутрішніх ресурсів.</li>
+      <li><strong>Підтримка сім’ї:</strong> консультації та ресурси для близьких, щоб укріпити опору довкола військових.</li>
+    </ul>
+    <h3>Фізична підтримка</h3>
+    <ul>
+      <li><strong>Фітнес- та оздоровчі програми:</strong> індивідуальні плани тренувань для підтримки фізичної форми.</li>
+      <li><strong>Медобслуговування та реабілітація:</strong> якісне лікування ушкоджень і відновні процедури для швидкого повернення до служби.</li>
+      <li><strong>Консультації з харчування:</strong> збалансовані раціони та поради для підвищення витривалості.</li>
+    </ul>
+    <h3>Інтегрований підхід</h3>
+    <p>
+      Поєднання психологічної та фізичної підтримки створює синергію для найкращих результатів. Ми допомагаємо одночасно зміцнювати розум і тіло, щоб ви були готові до будь-яких викликів як на службі, так і в цивільному житті.
+    </p>
+  </div>
+
+  <div class="video-container">
+    <h2>Дивіться: Підтримка наших захисників</h2>
+    <iframe
+            src="https://www.youtube.com/embed/TrgTDVZ9940?start=11"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+    </iframe>
+  </div>
+</section>
+</body>
+</html>
